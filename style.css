@@ -1,0 +1,60 @@
+html{
+    background-color:#d5d2cb;
+}
+#content{
+    width: 70%; /* Or any desired width */
+}
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: "Rubik", sans-serif;
+    animation:2s ease 0s 1 running fadeIn;
+  }
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+header{
+    margin:auto;
+    font-family: "Pacifico", cursive;
+    font-size: 2.3rem;
+}
+a:hover{
+    background-color: black;
+    color: #d5d2cb;
+    border-radius: 3px;
+}
+
+.bigtext{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.smalltext{
+    line-height: 2rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
+}
+i{
+    font-family: "Libre Baskerville", serif;
+}
+@keyframes fadeIn{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+@media (max-width: 780px) {
+  #content{
+    width:fit-content;
+    padding:unset;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   }
+   header{
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
+}
