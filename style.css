@@ -2,7 +2,7 @@ html{
     background-color:#d5d2cb;
 }
 #content{
-    width: 70%; /* Or any desired width */
+    width: auto;
 }
 body {
     margin-left: 10%;
