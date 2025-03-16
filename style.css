@@ -1,60 +1,134 @@
 html{
-    background-color:#d5d2cb;
+    background-color:#1c1f2a;
+    color:#d7d2cb;
 }
-#content{
-    width: auto;
+body{
+
+    font-family: 'Inter', sans-serif;
 }
-body {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    margin-top: 3rem;
-    font-family: "Rubik", sans-serif;
-    animation:2s ease 0s 1 running fadeIn;
-  }
-  a{
-    text-decoration: none;
-    color: #333;
-  }
 header{
-    margin:auto;
-    font-family: "Pacifico", cursive;
-    font-size: 2.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+}
+.message{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    font-size: 60px;
+    padding: 1rem;
+    line-height: 5.7rem;
+    animation: slideUp 3s normal forwards;
+}
+.message::selection{
+background-color: #1c1f2a;
+color: aliceblue;
+text-decoration: underline;
+}
+.logo{
+    font-family: 'Pacifico',cursive;
+    font-size: xx-large;
+    justify-self: flex-start;
+    align-content: center;
+}
+.links{
+    justify-self: flex-end;
+    align-content: center;
+    font-size: x-large;
+}
+.links a{
+    display: block;
+    margin-top: 14px;
+}
+
+.links img{
+    color: #d7d2cb;
+}
+a{
+    text-decoration: none;
+    color:#d7d2cb;
 }
 a:hover{
-    background-color: black;
-    color: #d5d2cb;
-    border-radius: 3px;
-}
-
-.bigtext{
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.smalltext{
-    line-height: 2rem;
-    margin-top: -1rem;
-    font-size: 1.2rem;
+    text-decoration: underline;
+    color:aliceblue;
 }
 i{
-    font-family: "Libre Baskerville", serif;
+    display: inline-block;
+    font-family: 'Macondo', monospace;
 }
-@keyframes fadeIn{
-    from{opacity: 0%;}
-    to{opacity: 100%;}
+@keyframes slideUp {
+    from { opacity: 0; }
+    to { opacity: 1;}
 }
-@media (max-width: 780px) {
-  #content{
-    width:fit-content;
-    padding:unset;
-    margin-left: 2rem;
-    margin-right: 2rem;
-   }
-   header{
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-
+@media (max-width:1200px){
+    .message{
+        font-size: 46px;
+        line-height: 4.3rem;
+    }
+}
+@media (max-width:1024px){
+    .message{
+        font-size: 40px;
+        line-height: 4rem;
+    }
+}
+@media (max-width:650px){
+    .message{
+        font-size: 30px;
+        line-height: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media (max-width:460px){
+    .message{
+        font-size: 27px;
+        line-height: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    header{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .links{
+        font-size: 16px;
+    }
+    .links a{
+        margin-top: 7px;
+    }
+}
+@media (max-width:320px){
+    .message{
+        font-size: 24px;
+        line-height: 2.2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .links{
+        font-size: 14px;
+    }
+    .links a{
+        margin-top: 5px;
+    }
 }
