@@ -202,8 +202,8 @@ header {
   height: 17px;
   width: auto;
 }
-  img {
-    width: 17px;
+img {
+    width: auto;
     height: 17px;
   }
 a {
