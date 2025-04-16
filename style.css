@@ -166,12 +166,6 @@ header {
     cursor: pointer;
 }
 
-svg {
-  position: absolute;
-  margin: 0 auto;
-  margin-left: 0.3rem;
-  display: inline;
-}
 
 .main-content {
   display: flex;
@@ -208,6 +202,10 @@ svg {
   height: 17px;
   width: auto;
 }
+  img {
+    width: 17px;
+    height: 17px;
+  }
 a {
   text-decoration: none;
   color: #d7d2cb;
