@@ -20,6 +20,7 @@ body {
  */ /* background: linear-gradient(to right, #667eea, #764ba2); */
   opacity: 1;
 }
+
 /* gradient and background container stuff */
 .background-container {
   position: fixed;
@@ -55,10 +56,7 @@ body {
     /* cool slate blue */ #2f1b38 /* deep plum/purple for that rich color hit */
   );
 }
-b {
-  font-family: "Inter Tight";
-  font-weight: 500;
-}
+
 header {
   position: sticky;
   padding: 0;
