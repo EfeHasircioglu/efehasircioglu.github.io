@@ -303,6 +303,7 @@ a:hover {
   }
   .footer{
     justify-content: center;
+    text-align: center;
   }
   .footer-item{
     width: auto;
