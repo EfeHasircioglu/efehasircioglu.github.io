@@ -212,7 +212,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: lightsalmon;
+  color: white;
 }
 
 @keyframes slideUp {
