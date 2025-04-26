@@ -30,7 +30,7 @@ html{
 }
 .projects-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,0.3fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px,0.5fr));
     gap: 1rem;
     width: 80%;
     justify-self: left;
