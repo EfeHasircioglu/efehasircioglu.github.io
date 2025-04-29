@@ -1,4 +1,10 @@
 /* bundan sonraki iş aşağıya glassy gözüken kartlar yapmak (kendin yap!) ve footer'i de bir şekilde halletmek. zor, ama güzel olacak */
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('monumentgrotesk.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -15,7 +21,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Monument Grotesk", sans-serif;
   /*     background: linear-gradient(135deg, #2d1e40, #204655, #1a2b3d);
  */ /* background: linear-gradient(to right, #667eea, #764ba2); */
   opacity: 1;

@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('monumentgrotesk.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 html{
    color: rgb(215, 210, 203);
-   font-family: 'Inter', sans-serif;
+   font-family: 'Monument Grotesk', sans-serif;
 }
 .background{
     background:linear-gradient(to right, #2c003e, #8a4f00);
