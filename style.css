@@ -22,7 +22,7 @@ body {
 }
 /* for the snappy stuff */
 .snap-container{
-  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
 }
 /* gradient and background container stuff */
 .background-container {
