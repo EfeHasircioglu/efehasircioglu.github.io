@@ -8,6 +8,7 @@ html {
   color: rgb(215, 210, 203);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   justify-self: center;
@@ -19,7 +20,10 @@ body {
  */ /* background: linear-gradient(to right, #667eea, #764ba2); */
   opacity: 1;
 }
-
+/* for the snappy stuff */
+.snap-container{
+  scroll-snap-type: mandatory;
+}
 /* gradient and background container stuff */
 .background-container {
   position: fixed;
@@ -88,6 +92,7 @@ header {
   line-height: 5.7rem;
   animation: slideUp 3s normal forwards;
   width: fit-content; /* or a fixed width or max-width */
+  scroll-snap-align: start;
 
 
 
@@ -138,6 +143,7 @@ header {
   padding-right: 4rem;
   padding-left: 4rem;
   justify-content: center;
+  scroll-snap-align: start;
 
 }
 .cards-grid {
