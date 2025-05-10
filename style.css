@@ -1,4 +1,3 @@
-/* bundan sonraki iş aşağıya glassy gözüken kartlar yapmak (kendin yap!) ve footer'i de bir şekilde halletmek. zor, ama güzel olacak */
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +20,13 @@ body {
   opacity: 1;
 }
 /* for the snappy stuff */
-.snap-container{
+.snap-container {
   scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.snap-section {
+  scroll-snap-align: start;
 }
 /* gradient and background container stuff */
 .background-container {
@@ -67,7 +71,6 @@ header {
   flex-direction: row;
   z-index: 1000;
   top: 0;
-  height: 5vh;
   justify-content: space-between;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -80,11 +83,11 @@ header {
 }
 
 .message {
-    margin-left: 3rem;
-    margin-right: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -92,59 +95,51 @@ header {
   line-height: 5.7rem;
   animation: slideUp 3s normal forwards;
   width: fit-content; /* or a fixed width or max-width */
-  scroll-snap-align: start;
-
-
-
 }
-.message-card{
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 1rem;
-    padding: 1.3rem;
-    background: rgba(148, 148, 148, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+.message-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 1.3rem;
+  background: rgba(148, 148, 148, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 }
-
 
 /* second page */
-.footer{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1rem;
-    font-size: 14px;
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+  font-size: 14px;
 }
-.footer-grid{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.footer-item{
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 1rem;
-    padding: 0.7rem;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    text-wrap-style:pretty;
-    width: auto;
-
+.footer-item {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  text-wrap-style: pretty;
+  width: auto;
 }
-.disco-cat{
+.disco-cat {
   cursor: pointer;
   display: inline-block;
 }
-.disco-cat:hover{
+.disco-cat:hover {
   animation: spin 2s linear infinite;
 }
 .cards {
   display: flex;
-  flex-direction: column; 
-  height: 95vh;
+  flex-direction: column;
+  height: 90vh;
   padding-right: 4rem;
   padding-left: 4rem;
   justify-content: center;
-  scroll-snap-align: start;
-
 }
 .cards-grid {
   display: grid;
@@ -165,12 +160,11 @@ header {
   max-height: max-content;
   min-width: 100px;
 }
-.card-item:hover{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+.card-item:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
-
 
 .main-content {
   display: flex;
@@ -208,9 +202,9 @@ header {
   width: auto;
 }
 img {
-    width: auto;
-    height: 17px;
-  }
+  width: auto;
+  height: 17px;
+}
 a {
   text-decoration: none;
   color: #d7d2cb;
@@ -309,11 +303,11 @@ a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .footer{
+  .footer {
     justify-content: center;
     text-align: center;
   }
-  .footer-item{
+  .footer-item {
     width: auto;
     font-size: small;
   }
@@ -341,8 +335,8 @@ a:hover {
 }
 @media (max-width: 376px) {
   .message {
-    font-size: 30px;
-    line-height: 3rem;
+    font-size: 25px;
+    line-height: 2.7rem;
     margin-left: 1rem;
     margin-right: 1rem;
     height: 95vh;
@@ -350,8 +344,8 @@ a:hover {
 }
 @media (max-width: 321px) {
   .message {
-    font-size: 25px;
-    line-height: 2.7rem;
+    font-size: 22px;
+    line-height: 2.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     height: 95vh;
