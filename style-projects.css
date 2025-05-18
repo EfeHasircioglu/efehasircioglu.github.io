@@ -76,3 +76,16 @@ a:hover {
   backdrop-filter: blur(15px);
   background-color: #f3f3f328;
 }
+@media (max-width:768px) {
+  .project-card-header{
+    font-size: 15px;
+      font-variation-settings: "opsz" 15;
+
+  }
+  .header-container{
+    font-size: 0.7rem;
+  }
+  .content{
+    margin-bottom: 3rem;
+  }
+}
